@@ -563,7 +563,13 @@ hr {
 
 .checkbox {
   position: absolute;
-  left: 9%;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 
   /* margin: 0; */
 }
@@ -573,7 +579,17 @@ hr {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  background-color: blueviolet;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+}
+
+.checkbox:checked + .img-icon {
+  border-color: transparent;
+  background-color: var(--accent-color);
+  background-image: url("../images/hero/icon-check.svg");
+  background-size: contain;
+  background-origin: border-box;
+  border-radius: 2px;
 }
 
 .terms-check {
