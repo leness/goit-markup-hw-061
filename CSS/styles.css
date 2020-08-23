@@ -1016,17 +1016,22 @@ hr {
   margin-right: 30px;
 }
 
-.subscribe-mail {
-}
+/* .subscribe-mail {
+  display: flex;
+} */
 
 .join {
   margin: 0;
   margin-bottom: 20px;
 }
 
+.foter-mail {
+  position: relative;
+}
+
 .male {
   padding: 15px 16px;
-
+  width: 358px;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1036,6 +1041,11 @@ hr {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }
 
 .mail-button {
@@ -1049,4 +1059,17 @@ hr {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: var(--accent-color);
+  border-radius: 4px;
+}
+
+.icon {
+  position: absolute;
+  display: inline-block;
+  top: 13px;
+  right: 28px;
 }
