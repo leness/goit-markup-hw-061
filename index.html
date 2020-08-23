@@ -595,7 +595,7 @@
         </div>
 
         <div class="join-item">
-          <b class="join">присоединяйтесь</b>
+          <p class="join">присоединяйтесь</p>
           <ul class="list-footer">
             <li class="social-link">
               <a
@@ -649,13 +649,29 @@
           </ul>
         </div>
 
-        <!-- <div class="subscribe-item">
-          <b class="join">Подпишитесь на рассылку</b>
-          <a href="mailto:"></a>
-          <button>Подписаться</button>
-        </div> -->
+        <div class="subscribe-item">
+          <p class="join">Подпишитесь на рассылку</p>
+          <div>
+            <form method="POST" class="subscribemail">
+              <input
+                type="mail"
+                name="mail"
+                class="male"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="mail-button">
+                Подписаться
+              </button>
+            </form>
+            <!-- <input type="mail" id="mail" />
+            <label for="mail">
+              <button>Подписаться</button> -->
+          </div>
+        </div>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+
+<a href="mailto:"></a>
